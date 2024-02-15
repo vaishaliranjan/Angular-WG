@@ -1,0 +1,23 @@
+<h3>String Interpolation</h3>
+<p>My name is {{name}}</p>
+<p>My age is {{getAge()}}</p>
+<p>I am {{status? 'Online':'Offline'}}</p>
+
+<h3>Property Binding</h3>
+<input type="text" disabled value="{{name}}">
+<br>
+<input type="text" disabled [value]="name">
+<br>
+<input type="text" disabled [value]="status? 'Kritika':'Ritika'">
+
+
+<h3>Event Binding</h3>
+<button (click)="onClick()">Click Me</button>
+<p>Number: {{number}}</p>
+<input type="text"(keypress)="onKeyPress($event)">
+
+
+<h3>Two Way Data Binding</h3>
+<!-- We need to import FormsModule for that in appModule -->
+<input type="text" [(ngModel)]="username" >
+<p>{{username}}</p>

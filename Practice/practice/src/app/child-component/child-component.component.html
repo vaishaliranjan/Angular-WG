@@ -1,0 +1,8 @@
+<p>Employee Details: </p>
+<p *ngIf="employee.name">Name: {{employee.name}}</p>
+<p *ngIf="employee.age">Age: {{employee.age}}</p>
+
+<br>
+
+<button (click)="onSubmitList()">Add to list</button>
+<ng-content></ng-content>
